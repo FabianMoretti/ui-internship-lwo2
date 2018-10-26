@@ -8,4 +8,4 @@ export const peopleInBus = (arr) => {
     outside += arr[i][1];
   }
   return inside - outside;
-}
+};

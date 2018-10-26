@@ -3,4 +3,4 @@ export const getAverage = (arr) => {
     return sum + current;
   });
   return Math.floor(result / arr.length);
-}
+};

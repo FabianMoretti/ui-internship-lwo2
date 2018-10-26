@@ -9,4 +9,4 @@ export const checkLetters = (arr) => {
     return check;
   });
   return check;
-}
+};
