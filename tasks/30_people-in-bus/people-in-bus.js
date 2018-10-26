@@ -4,8 +4,8 @@ export const peopleInBus = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     inside += arr[i][0];
   }
-    for (let i = 0; i < arr.length; i++) {
-      outside += arr[i][1];
+  for (let i = 0; i < arr.length; i++) {
+    outside += arr[i][1];
   }
   return inside - outside;
 }

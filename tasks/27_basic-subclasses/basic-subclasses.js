@@ -20,4 +20,4 @@ class Woman extends Human {
     this.sex = 'female';
   }
 }
-export {God, Human, Man, Woman};
+export { God, Human, Man, Woman };
