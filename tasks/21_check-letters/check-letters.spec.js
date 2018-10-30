@@ -1,4 +1,4 @@
- import { checkLetters } from './check-letters';
+import { checkLetters } from './check-letters';
 
 describe('check-letters', () => {
     test('checkLetters(["hello", "hey"]) should return false', () => {
