@@ -10,4 +10,3 @@ export function factorialize(n) {
   }
   return f[n] = factorialize(n-1) * n;
 }
-

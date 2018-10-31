@@ -30,11 +30,7 @@ export const contacts = [
 export function lookupProfile(firstName, prop) {
   for (let i = 0; i < contacts.length; i++) {
     if (contacts[i]['firstName'] === firstName) {
-      if (contacts[i].hasOwnProperty(prop)) {
-        return contacts[i][prop];
-      }
+      if (contacts[i].hasOwnProperty(prop)) return contacts[i][prop];
       return 'No such property';
     }
-  }
-  return 'No such contact';
-}
+  } return 'No such contact';
