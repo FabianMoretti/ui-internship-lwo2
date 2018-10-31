@@ -33,4 +33,6 @@ export function lookupProfile(firstName, prop) {
       if (contacts[i].hasOwnProperty(prop)) return contacts[i][prop];
       return 'No such property';
     }
-  } return 'No such contact';
+  }
+  return 'No such contact';
+}
