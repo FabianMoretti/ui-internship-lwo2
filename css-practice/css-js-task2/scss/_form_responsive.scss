@@ -1,0 +1,38 @@
+  @media screen and(max-width: 1024px) {
+    .form {
+      .inputs {
+        flex-wrap: wrap;
+
+        .info_inp {
+          width: 31%;
+
+          &[type=submit] {
+            margin-top: 24px;
+            flex-grow: 1;
+          }
+        }
+      }
+    }  
+  }
+
+  @media screen and (max-width: 768px) {
+    .form {
+      
+      .inputs {
+        
+        .info_inp {
+          width: 100%;
+          margin-bottom: 20px;
+
+          &[type=submit] {
+            width: 61%;
+          }
+        }
+      }
+
+      h6 {
+        font-size: 15px;
+      }
+    }
+  }
+  

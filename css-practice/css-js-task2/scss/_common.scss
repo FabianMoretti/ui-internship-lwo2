@@ -1,0 +1,87 @@
+body {
+  margin: 0 auto;
+  font-family: $font_exo;
+  max-width: 1440px;
+  background: #ececec;
+  box-sizing: border-box;
+}
+
+p {
+  color: #77787a;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+main {
+  display: block;
+}
+
+.disp-none {
+  display: none;
+}
+
+.disp-block {
+  display: block;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.bg_black {
+  background: black;
+}
+
+.h5_big {
+  color: $red_color;
+  font-size: 16px;
+  margin: 0 0 0 0;
+  @include spacing (3px, inherit);
+  text-transform: uppercase;
+}
+
+.h3_big {
+  font-size: 40px;
+  margin: 0 0 33px 0;
+  @include spacing (1px, inherit);
+}
+
+.h3_small {
+  font-size: 22px;
+  color: $white_color;
+  font-weight: 400;
+  margin: 15px 0 0 0;
+  @include spacing (.2px, 1px);
+}
+
+.padding_x {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.p_big {
+  font-size: 16px;
+  margin: 0 0 37px 0;
+  @include spacing (.4px, 0);
+  line-height: 25px;
+}
+
+.dots {
+  color: #fb8686;
+  letter-spacing: 5px;
+}
+
+.marged {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}  
+
+@import 'common_responsive'

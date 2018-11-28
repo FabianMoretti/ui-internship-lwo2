@@ -1,0 +1,20 @@
+@mixin flex ($align, $justify, $f-flow) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $f-flow nowrap;
+}
+
+@mixin bg-img ($size, $attach, $pos-x, $pos-y) {
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-attachment: $attach;
+  background-position-x: $pos-x;
+  background-position-y: $pos-y; 
+}
+
+
+@mixin spacing ($letter-s, $word-s) {
+  letter-spacing: $letter-s;
+  word-spacing: $word-s;
+}

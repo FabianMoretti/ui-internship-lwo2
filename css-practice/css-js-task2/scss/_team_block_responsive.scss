@@ -1,0 +1,41 @@
+@media screen and (max-width: 1024px) {
+  .our_team {
+
+    .content {
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      div {
+        flex-basis: 90%;
+        background: rgba(0,0,0, 0.5);
+        text-align: center;
+        padding: 25px;
+        margin-bottom: 30px;
+        
+        h5 {
+          margin-bottom: 18px;
+        }  
+
+        .team_p {
+          margin-bottom: 25px;
+        }
+
+        .team_p::before {
+          content: '';
+          display: block;
+          width: 14%;
+          height: 3px;
+          background: $red_color;
+          border-radius: 3px;
+          margin: 16px auto;
+        }
+      }
+    }
+
+    .img_holder {
+      img {
+        width: 90%;
+      }
+    }
+  }
+}

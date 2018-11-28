@@ -1,0 +1,30 @@
+.features {
+  background-image: url(../images/features-img.png);
+  @include bg-img(cover, unset, center, center);
+  text-align: center;
+  padding-top: 9.3%;
+  padding-bottom: 5%;
+
+  .benefits {
+    @include flex(unset, space-between, row);
+    margin: 5% auto;
+    max-width: 78%;
+
+    div {
+      flex-basis: 31%;
+
+      h5 {
+        font-size: 22px;
+        margin: 24px 0 0 0;
+        @include spacing (.6px, inherit);
+      }
+
+      p {
+        margin-top: 10px;
+        letter-spacing: .4px;
+      }
+    }
+  }
+}
+
+@import 'features_responsive';

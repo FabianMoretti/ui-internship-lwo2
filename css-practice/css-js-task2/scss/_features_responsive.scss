@@ -1,0 +1,48 @@
+@media screen and (max-width: 1024px) {
+  .features {
+    background-image: none;
+    
+    .benefits {
+      flex-wrap: wrap;
+      width: 80%;
+
+      div {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 30px;
+        border: 1px solid lightgray;
+        border-radius: 50px;
+      }
+
+      .p_big {
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      h5::after {
+        content: '';
+        display: block;
+        width: 14%;
+        height: 3px;
+        background: $red_color;
+        border-radius: 3px;
+        margin: 16px auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .features {
+    .benefits {
+      width: 90%;
+      max-width: 90%;
+
+      .p_big {
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@media screen and (max-width: 1024px) {
+  header {
+    height: 750px;
+
+    video {
+      transform: translateX(-50%) translateY(-54%);
+    }
+
+    .container {
+      h1 {
+        margin-top: 154px;
+        font-size: 50px;
+      }
+
+      a {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 600px;
+    background-position: center;
+
+    video {
+      transform: translateX(-50%) translateY(-63%);
+    }
+    .container {
+      flex-basis: 70%;
+     
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    background-position: unset;
+  }
+}

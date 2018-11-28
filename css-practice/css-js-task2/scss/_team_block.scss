@@ -1,0 +1,39 @@
+.our_team {
+  background-image: url(../images/team-bg.png);
+  background-attachment: fixed;
+  padding-bottom: 64px;
+  .content {
+    padding-top: 7.6%;
+    width: 76%;
+    margin: 0 auto;
+    @include flex(inherit, space-between, row);
+
+    div {
+      text-align: center;
+      flex-basis: 29%;
+    }
+  }
+
+  .img_holder {
+    margin-top: 38px;
+    width: fit-content;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+
+.position {
+  color: $red_color;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 2px 0 26px 0;
+  @include spacing (-1px, 4px);
+}
+
+.team_p {
+  word-spacing: 1px;
+  line-height: 27px;
+}
+
+@import 'team_block_responsive';

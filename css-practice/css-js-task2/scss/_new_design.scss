@@ -1,0 +1,20 @@
+.info_holder {
+  @include flex(flex-start, flex-start, row);
+  
+  .content_block {
+    flex-basis: 60%;
+    padding: 13% 10% 9% 10.5%;
+    background: $white_color;
+  }
+
+  .pic_holder {
+    flex-basis: 58%;
+    @include flex(auto, flex-end, column);
+    margin-top: auto;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@import 'new_design_responsive';

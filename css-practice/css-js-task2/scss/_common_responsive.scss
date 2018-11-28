@@ -1,0 +1,18 @@
+@media screen and (max-width: 1024px) {
+  .h3_big {
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 0 20px; 
+  }
+
+  .padding_x {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .h3_big {
+    font-size: 26px;
+  }
+}

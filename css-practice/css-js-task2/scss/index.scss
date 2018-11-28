@@ -1,0 +1,24 @@
+input{
+  outline: none;
+}
+$red_color: #ff6d6d;
+$white_color: #fff;
+$font_exo: 'Exo', sans-serif;
+
+@import 'mixins';
+@import 'common';
+
+@import 'header';
+
+@import 'new_design';
+@import 'features';
+@import 'responsive';
+@import 'team_block';
+@import 'awesome_features';
+@import 'form';
+
+@import 'footer';
+
+
+
+ 

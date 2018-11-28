@@ -1,0 +1,26 @@
+.responsive {
+  background: $white_color;
+  background-image: url(../images/three-bg.png);
+  @include bg-img(auto, fixed, -966px, -130px);
+  @include flex(center, space-between, row);
+
+  .pic_holder {
+    width: 44%;
+    margin-left: 4%;
+    
+    img {
+      width: 100%;
+    }
+  }
+
+  .content_block {
+    padding: 9.6% 14% 7.4% 0%;
+    width: 35%;
+    h5 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@import 'responsive_responsive';
+

@@ -1,0 +1,35 @@
+@media screen and (max-width: 1024px) {
+  .responsive {
+    background-position-x: -1200px;
+    .content_block {
+      padding: 12% 6% 10% 4%;
+      width: 44%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive {
+    flex-wrap: wrap;
+    justify-content: center;
+    background-attachment: unset;
+    background-position-y: -947px;
+
+    .pic_holder {
+      margin-top: 50px;
+      margin-bottom: 30px;
+      margin-left: 0;
+      width: 58%;
+
+    }
+
+    .content_block {
+      width: 78%;
+      padding: 0 0 30px 0;
+
+      h3 {
+        margin-bottom: 26px;
+      }
+    }
+  }
+}
