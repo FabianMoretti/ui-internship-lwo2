@@ -1,0 +1,48 @@
+.people{
+  background: url(../img/people-bg.png) no-repeat;
+  background-size: cover;
+}
+.people-kau-title{
+  margin-top: 9%;
+}
+.people-line{
+  margin-top: 3.4%;
+}
+.people-bottom{
+  @extend .service-bottom;
+  margin-bottom: 7.1%;
+}
+.people-bottom-box{
+  @extend .service-bottom-box;
+  width: 47%;
+  margin: 2% 0 4%;
+}
+.people-box-left{
+  @extend .service-box-left;
+  width: 21%;
+  transition: none;
+}
+.people-box-right{
+  @extend .service-box-right;
+  width: 70%;
+  margin-left: 5.5%;
+}
+.people-box-right-title{
+  @extend .service-box-right-title;
+  margin-top: 3%;
+}
+.people-box-right-title-small{
+  margin-top: 2%;
+  color: $black;
+  font-family: $roboto;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 24px;
+}
+.people-box-right-text{
+  margin-top: 5.6%;
+}
+.people-box-line{
+  @extend .people-line;
+  width: 16%;
+}

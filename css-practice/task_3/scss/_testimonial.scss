@@ -1,0 +1,45 @@
+.testimonial-main{
+  margin-top: 1.3%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.testimonial-arrow{
+  @extend .quote-arrow;
+  margin-top: -4%;
+}
+.testimonial-content{
+  width: 86.9%;
+  overflow: hidden;
+}
+.testimonial-box-content{
+  width: 300%;
+  display: flex;
+  transition: .7s;
+  transform: translateX(0);
+}
+.testimonial-box{
+  @extend .quote-box;
+  width: 87%;
+  margin-bottom: 3.8%;
+}
+.testimonial-box-left{
+  @extend .quote-box-left;
+  width: 20.4%;
+}
+.testimonial-box-right{
+  @extend .quote-box-right;
+  width: 76.5%;
+  margin-top: 10.2%;
+}
+.testimonial-box-right-top{
+  @extend .quote-box-right-top;
+}
+.testimonial-box-right-bottom{
+  @extend .quote-box-right-bottom;
+}
+.testimonial-line{
+  @extend .quote-line;
+}
+.testimonial-author{
+  @extend .quote-author;
+}

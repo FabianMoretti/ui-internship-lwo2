@@ -1,0 +1,56 @@
+
+//quote
+.quote-arrow{
+  width: 1.1%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.quote-box{
+  width: 100%;
+  margin-bottom: 2.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.quote-content{
+  width: 86.9%;
+  overflow: hidden;
+}
+.quote-box-content{
+  width: 300%;
+  display: flex;
+  transition: .7s;
+  transform: translateX(0);
+}
+.quote-box-left{
+  width: 15.4%;
+  margin-top: 7.2%;
+  transition: transform 1s;
+}
+.quote-box-right{
+  width: 78.5%;
+  margin-top: 7.5%;
+}
+.quote-box-right-top{
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 36px;
+}
+.quote-box-right-bottom{
+  display: flex;
+  justify-content: flex-start;
+}
+.quote-line{
+  width: 8%;
+  margin-top: 3.8%;
+  height: 3px;
+  background: #f38181;
+}
+.quote-author{
+  margin: 2% 0 0 1%;
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-size: 24px;
+}

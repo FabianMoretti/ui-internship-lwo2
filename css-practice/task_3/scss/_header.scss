@@ -1,0 +1,194 @@
+html {
+  scroll-behavior: smooth;
+}
+img{
+  width: 100%;
+}
+.flex-jc-sb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../img/header-eagle.png) no-repeat;
+  background-size: cover;
+}
+.banner-main,.about-main,.facts-main,.service-main,.we-do-main,.quote-main,.our-team-main,.logos-main,.testimonial-main,.people-main,.blog-main,.map-main,.footer-main{
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-container{
+  visibility: none;
+  opacity: 1;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+.nav-color{
+  opacity: 1;
+  background: $lightblue;
+  z-index: 3;
+  animation: opacityBorn .5s;
+}
+@keyframes opacityBorn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.banner-top{
+  width: 100%;
+  max-width: 1400px;
+}
+.banner-logo{
+  margin-top: 1%;
+  color: $white;
+  font-family: $montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.banner-nav{
+  width: 51.5%;
+  margin: 2.9% 0 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-nav-left{
+  width: 79%;
+}
+.nav-item a{
+  color: $white;
+  font-family: $montserrat;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+
+  &:hover::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-top: 10px;
+    background: #fce38a;
+    position: absolute;
+  }
+}
+.banner-nav-right{
+  width: 13%;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-shop-cart{
+  width: 27%;
+  cursor: pointer;
+}
+.banner-search{
+  width: 23%;
+  cursor: pointer;
+}
+.banner-middle{
+  width: 100%;
+  flex-direction: column;
+}
+.banner-middle-top{
+  margin-top: 13%;
+  color: $white;
+  font-family: $kaushan;
+  font-size: 72px;
+}
+.banner-middle-title{
+  margin-top: 4%;
+  text-align: center;
+  color: $white;
+  font-family: 'Montserrat Extra-Bold', sans-serif;
+  font-size: 150px;
+  font-weight: bold;
+  line-height: 140px;
+  text-transform: uppercase;
+}
+.banner-middle-line{
+  width: 5%;
+  margin-top: 4.3%;
+  height: 3px;
+  background: $white;
+}
+.banner-middle-button{
+  width: 13%;
+  margin-top: 4%;
+  border: 3px solid $white;
+    
+    &:hover{
+      border: 3px solid #fce38a;
+      cursor: pointer;
+    }
+}
+.banner-middle-button-text{
+  margin: 7% 0 7%;
+  text-align: center;
+  color: $white;
+  font-family: $montserrat;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.banner-bottom{
+  width: 100%;
+  margin: 13.1% 0 1.8%;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-bottom-box{
+  width: 22.3%;
+
+  &:hover  .banner-red-line {
+    opacity: 1;
+    transition: .4s;
+  }
+}
+.banner-white-line{
+  width: 100%;
+  height: 2px;
+  background: $white;
+  position: relative;
+
+}
+.banner-red-line{
+  position: absolute;
+  transition: .4s;
+  opacity: 0;
+  width: 25%;
+  height: 2px;
+  background: red;
+}
+.menu-item{
+  width: 100%;
+  margin-top: 25px;
+  text-align: left;
+  color: $white;
+  text-transform: uppercase;
+  font-family: $montserrat;
+  font-size: 18px;
+  position: relative;
+  cursor: pointer;
+}
+.menu-item span{
+  color: $white;
+  text-transform: uppercase;
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+}

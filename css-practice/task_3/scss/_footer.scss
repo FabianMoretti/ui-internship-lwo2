@@ -1,0 +1,197 @@
+.footer-top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-left{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-left-title{
+  margin-top: 14.5%;
+  color: $gray;
+  font-family: $montserrat;
+  font-size: 46px;
+  font-weight: bold;
+}
+.footer-left-text{
+  margin-top: 5.3%;
+  color: #999999;
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer-left-followers{
+  color: $black;
+  font-family: $montserrat;
+  font-size: 14px;
+}
+.footer-left-followers span{
+  color: $black;
+  font-family: "Montserrat - Bold";
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer-left-line{
+  width: 100%;
+  height: 1px;
+  margin-top: 3.3%;
+  background: #e5e5e5;
+}
+.footer-follow{
+  width: 64%;
+  margin-top: 3%;
+}
+.follow-left{
+  color: #999999;
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+}
+.follow-right{
+  width: 72%;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-box{
+  width: 79%;
+  margin-top: 6.4%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.input-box{
+  width: 60%;
+}
+.input-box input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  color: $gray;
+  font-family: "Roboto - Light Italic";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.input-box input::placeholder{
+  color: $gray;
+  font-family: "Roboto - Light Italic";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: italic;
+}
+.subscribe-button{
+  width: 40%;
+  margin-left: 4px;
+  background: $lightblue;
+}
+.subscribe-button-text{
+  margin: 13px 0 13px;
+  text-align: center;
+  color: $white;
+  font-family: $montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.subscribe-button:hover{
+  background: #56dfc6;
+  cursor: pointer;
+}
+.footer-center{
+  width: 32.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-center-title,.footer-right-title{
+  margin-top: 20%;
+  text-align: left;
+  color: $black;
+  font-family: $montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer-center-bottom{
+  @extend .service-bottom;
+  margin: 10% 0 0 0;
+}
+.footer-center-bottom-box{
+  width: 100%;
+  margin: 0 0 7% 0;
+  display: flex;
+}
+.footer-center-box-right-null-margin{
+  @extend .footer-center-bottom-box;
+  margin: 0 0 0 0;
+}
+.footer-center-box{
+  @extend .service-bottom-box;
+}
+.footer-center-box-left{
+  @extend .service-box-left;
+  width: 58%;
+  transition: none;
+  transform: none;
+}
+.footer-center-box-right{
+  @extend .service-box-right;
+  margin: 5% 0 0 4%;
+}
+.footer-center-box-right-title{
+  @extend .service-box-right-title;
+}
+.footer-center-box-right-text{
+  margin: 2% 0 0 0;
+  font-style: italic;
+}
+.footer-right{
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-right-title{
+  margin: 29% 0 0 0;
+}
+.footer-right-photos{
+  width: 100%;
+  margin-top: 14%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.insta-photo{
+  margin: 0 3px 0 0;
+}
+.insta-photo:hover{
+  transform: scale(1.5);
+  transition: .5s;
+}
+.footer-right-text{
+  margin-top: 3%;
+  color: $black;
+  font-family: "Roboto - Light Italic";
+  font-size: 14px;
+  font-style: italic;
+  line-height: 24px;
+}
+.footer-line{
+  width: 100%;
+  height: 1px;
+  margin-top: 3.2%;
+  background: #e5e5e5;
+}
+.footer-copyright,.footer-copyright span{
+  margin: 2% 0 2% 0;
+  color: $black;
+  font-family: $montserrat;
+  font-size: 14px;
+}
+.footer-copyright span{
+  color: $lightred;
+}

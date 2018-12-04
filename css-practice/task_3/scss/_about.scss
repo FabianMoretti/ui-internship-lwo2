@@ -1,0 +1,82 @@
+.about,.facts,.service,.we-do,.quote,.our-team,.logos,.testimonial,.people,.blog,.map,footer{
+  width: 100%;
+  background: $white;
+  display: flex;
+  justify-content: center;
+}
+.kau-title-all,.service-kau-title-all,.feauture-kau-title-all,.we-do-kau-title-all,.work-kau-title-all,.people-kau-title,.blog-kau-title-all{
+  margin-top: 7.7%;
+  text-align: center;
+  color: $black;
+  font-family: $kaushan;
+  font-size: 24px;
+}
+.title-all,.service-title-all,.feauture-title-all,.we-do-title-all,.work-title-all,.people-title,.blog-title-all{
+  margin-top: 1.5%;
+  text-align: center;
+  color: $black;
+  font-family: 'Montserrat Bold', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.line-all,.service-line-all,.feauture-line-all,.we-do-line-all,.work-line-all,.people-line,.blog-line-all,.map-line{
+  width: 5%;
+  margin-top: 3%;
+  height: 3px;
+  background: $lightred;
+}
+.text-all,.we-do-text-all,.work-text-all{
+  margin-top: 3.5%;
+  text-align: center;
+  color: #999999;
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 24px;
+}
+.about-bottom{
+  width: 100%;
+  margin: 8% 0 9%;
+  display: flex;
+  justify-content: space-between;
+}
+.about-bottom-box{
+  width: 31.7%;
+  position: relative;
+  &:hover > div {
+    transform: translate(-10px, -10px);
+    transition-duration: .5s;
+    box-shadow: 10px 10px $lightblue;
+    cursor: pointer;
+  }
+  &:hover > img {
+    transform: translate(-10px, -10px);
+    transition-duration: 2s;
+  }
+  &:hover > .about-bottom-box-hover {
+    z-index: 2;
+    margin-bottom: -4px;
+  }
+}
+.about-bottom-box-hover{
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.hover-img{
+  width: 9%;
+  margin: 25% 0 1%;
+}
+.hover-text{
+  margin-bottom: 28%;
+  color: #ffffff;
+  font-family: $montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

@@ -1,0 +1,234 @@
+$mobile-s: 320px;
+$mobile-m: 375px;
+$mobile-l: 425px;
+$tablet: 768px;
+$laptop: 1024px;
+$laptop-l: 1340px;
+$laptop-4k: 2560px;
+
+@media screen and (min-width: $laptop) and (max-width: $laptop-l) {
+  .banner-main,.about-main,.facts-main,.service-main,.we-do-main,.quote-main,.our-team-main,.logos-main,.work-main,.testimonial-main,.people-main,.blog-main,.map-main,.footer-main{
+    width: 1010px;
+    max-width: 1010px;
+  }
+  .footer-right{
+    display: none;
+  }
+}
+@media screen and (min-width: $tablet) and (max-width: $laptop) {
+  .banner-main,.about-main,.facts-main,.service-main,.we-do-main,.quote-main,.our-team-main,.logos-main,.work-main,.testimonial-main,.people-main,.blog-main,.map-main,.footer-main{
+    width: 650px;
+    max-width: 650px;
+  }
+  .banner-nav{
+    width: 65%;
+  }
+  .banner-middle-top{
+    font-size: 50px;
+  }
+  .banner-middle-title{
+    font-size: 100px;
+  }
+  .banner-middle-button{
+    width: 25%;
+  }
+  .number{
+    font-size: 30px;
+  }
+  .we-do-bottom,.people-bottom,.our-team-bottom,.footer-top{
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-left,.bottom-right,.people-bottom-box,.footer-left,.footer-center,.footer-right{
+    width: 70%;
+  }
+  .quote-box-right-top{
+    font-size: 14px;
+  }
+  .our-team-bottom-box{
+    width: 58%;
+  }
+  .footer-center-title,.footer-right-title{
+    margin: 10% 0 0 0;
+  }
+  .footer-center-box-right{
+    margin: 0 0 0 0;
+  }
+  .footer-right{
+    display: none;
+  }
+  .footer-follow{
+    width: 84%;
+  }
+  .follow-left{
+    font-size: 14px;
+  }
+  .footer-line{
+    display: none;
+  }
+}
+@media screen and (min-width: $mobile-l) and (max-width: $tablet) {
+  .banner-main,.about-main,.facts-main,.service-main,.we-do-main,.quote-main,.our-team-main,.logos-main,.work-main,.testimonial-main,.people-main,.blog-main,.map-main,.footer-main{
+    width: 400px;
+    max-width: 400px;
+  }
+  .banner-top{
+    display: none;
+  }
+  .banner-nav{
+    width: 65%;
+  }
+  .banner-middle-top{
+    font-size: 30px;
+  }
+  .banner-middle-title{
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .banner-middle-button{
+    width: 25%;
+    margin-bottom: 5%;
+  }
+  .banner-bottom{
+    display: none;
+  }
+  .about-bottom{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-bottom-box{
+    width: 70%;
+  }
+  .facts{
+    display: none;
+  }
+  .service-bottom{
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-bottom-box{
+    width: 70%;
+  }
+  .service-line{
+    display: none;
+  }
+  .we-do-bottom,.people-bottom,.our-team-bottom,.footer-top{
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-right-top,.bottom-right-center,.bottom-right-bottom{
+    margin: 5% 0 0 0;
+  }
+  .bottom-left,.bottom-right,.people-bottom-box,.footer-left,.footer-center,.footer-right{
+    width: 70%;
+  }
+  .quote{
+    display: none;
+  }
+  .our-team-bottom-box{
+    width: 58%;
+    margin-top: 10%;
+  }
+  .testimonial{
+    display: none;
+  }
+  .people-bottom-box{
+    width: 90%;
+  }
+  .blog-bottom-box{
+    width: 90%;
+  }
+  .footer-center-title,.footer-right-title{
+    margin: 10% 0 0 0;
+  }
+  .footer-center-box-right{
+    margin: 0 0 0 0;
+  }
+  .footer-right{
+    display: none;
+  }
+  .footer-follow{
+    width: 84%;
+  }
+  .follow-left{
+    font-size: 14px;
+  }
+  .footer-line{
+    display: none;
+  }
+}
+@media screen and (min-width: $mobile-s) and (max-width: $mobile-l) {
+  .banner-main,.about-main,.facts-main,.service-main,.we-do-main,.quote-main,.our-team-main,.logos-main,.work-main,.testimonial-main,.people-main,.blog-main,.map-main,.footer-main{
+    width: 300px;
+    max-width: 300px;
+  }
+  .banner-top{
+    display: none;
+  }
+  .banner-middle-top{
+    font-size: 16px;
+  }
+  .banner-middle-title{
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .banner-middle-button{
+    width: 35%;
+    margin-bottom: 5%;
+  }
+  .title-all, .service-title-all, .feauture-title-all, .we-do-title-all, .work-title-all, .people-title, .blog-title-all {
+    font-size: 24px;
+  }
+  .banner-bottom{
+    display: none;
+  }
+  .about-bottom,.service-bottom,.we-do-bottom,.people-bottom,.our-team-bottom,.footer-top{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-bottom-box,.service-bottom-box,.people-bottom-box,.blog-bottom-box{
+    width: 100%;
+  }
+  .facts{
+    display: none;
+  }
+  .service-line{
+    display: none;
+  }
+  .bottom-right-top,.bottom-right-center,.bottom-right-bottom{
+    margin: 5% 0 0 0;
+  }
+  .bottom-left,.bottom-right,.people-bottom-box,.footer-left,.footer-center,.footer-right,.our-team-bottom-box{
+    width: 90%;
+  }
+  .quote{
+    display: none;
+  }
+  .our-team-bottom-box{
+    margin-top: 10%;
+  }
+  .testimonial{
+    display: none;
+  }
+  .footer-center-title,.footer-right-title{
+    margin: 10% 0 0 0;
+  }
+  .footer-center-box-right{
+    margin: 0 0 0 0;
+  }
+  .footer-right-title{
+    margin: 5% 0 0 0;
+  }
+  .footer-right{
+    display: none;
+  }
+  .footer-follow{
+    width: 84%;
+  }
+  .follow-left{
+    font-size: 14px;
+  }
+  .footer-line{
+    display: none;
+  }
+}
