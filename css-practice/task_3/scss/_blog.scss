@@ -4,12 +4,15 @@
 .blog-bottom{
   @extend .our-team-bottom;
   margin: 4.3% 0 9.8%;
+  display: flex;
+  flex-wrap: wrap;
 }
 .blog-bottom-box{
   @extend .our-team-bottom-box;
   width: 32%;
   margin-right: 1%;
   align-items: flex-start;
+  flex-grow: 1;
 }
 .blog-box-title{
   margin: 4.5% 0 0 2%;
