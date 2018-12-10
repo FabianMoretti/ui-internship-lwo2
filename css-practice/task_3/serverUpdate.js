@@ -23,12 +23,15 @@ function createBlog(data) {
     const day = date.getDate();
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const month = months[date.getMonth()];
-    const year = date.getFullYear();
-
-    const padly = document.getElementById('our-blog');
+    const ourBlog = document.getElementById('our-blog');
     const blog = document.createElement('div');
     blog.classList.add('blog-bottom-box');
-    blog.innerHTML = `<img src="${prewImg}" alt="seo">
+    blog.innerHTML = `<div class="img-holder"><img src="${prewImg}" alt="seo">
+    <div class="date-box">
+    <h2>${day}</h2>
+    <p>${month}</p>
+    </div>
+    </div>
   <div class="blog-box-bottom">
     <div class="blog-box-title">${title}</div>
     <div class="blog-box-text">${description}</div>
@@ -48,14 +51,13 @@ function createBlog(data) {
     </div>
   </div>
 </div>`;
-    padly.appendChild(blog);
+  ourBlog.appendChild(blog);
   }
 }
-
 function createFooterBlog(data) {
   const latestLength = data.latest.length;
   const blogsLength = data.blogs.length;
-  for (let i = latestLength -1; i < blogsLength; i++) {
+  for (let i = latestLength - 1; i < blogsLength; i++) {
     const prewImg = data.blogs[i].previewImg;
     const title = data.blogs[i].title;
     const published = data.blogs[i].published;
@@ -64,7 +66,6 @@ function createFooterBlog(data) {
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const month = months[date.getMonth()];
     const year = date.getFullYear();
-
     const footerBlog = document.getElementById('footer-blog');
     const blog = document.createElement('div');
     blog.classList.add('footer-center-bottom');

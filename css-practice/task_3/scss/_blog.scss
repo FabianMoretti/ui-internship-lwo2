@@ -25,11 +25,13 @@
 }
 .blog-box-text{
   margin: 3.1% 0 0 2.5%;
+  height: 150px;
   text-align: left;
   color: #999999;
   font-family: $roboto;
   font-size: 16px;
   line-height: 24px;
+  overflow: auto;
 }
 .box-line{
   width: 100%;
@@ -58,4 +60,32 @@
 }
 .comments{
   margin-left: 6%;
+}
+.img-holder{
+  position: relative;
+}
+.img-holder img{
+  height: 350px;
+}
+.date-box{
+  position: absolute;
+  top: 280px;
+  background: $lightblue;
+  left: -10px;
+  padding: 5px 10px;
+}
+.date-box h2{
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0;
+}
+.date-box p{
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 0;
 }

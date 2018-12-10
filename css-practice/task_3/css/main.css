@@ -804,11 +804,13 @@ img {
 
 .blog-box-text {
   margin: 3.1% 0 0 2.5%;
+  height: 150px;
   text-align: left;
   color: #999999;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  line-height: 24px; }
+  line-height: 24px;
+  overflow: auto; }
 
 .box-line {
   width: 100%;
@@ -837,6 +839,34 @@ img {
 
 .comments {
   margin-left: 6%; }
+
+.img-holder {
+  position: relative; }
+
+.img-holder img {
+  height: 350px; }
+
+.date-box {
+  position: absolute;
+  top: 280px;
+  background: #95e1d3;
+  left: -10px;
+  padding: 5px 10px; }
+
+.date-box h2 {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 0; }
+
+.date-box p {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 0; }
 
 .map {
   background: url(../img/map-bg.png) no-repeat;
@@ -992,7 +1022,7 @@ img {
   transform: none; }
 
 .footer-center-box-right {
-  margin: 5% 0 0 4%; }
+  margin: 0 0 0 4%; }
 
 .footer-center-box-right-text {
   margin: 2% 0 0 0;
