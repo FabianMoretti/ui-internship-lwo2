@@ -1,83 +1,97 @@
-const blogs = 'http://localhost:3000/api/blogs';
+function createBlogs() {
+  const blogs = 'http://localhost:3000/api/blogs';
 
+  function fillBlogs(blogsArr, container, template) {
+    blogsArr.forEach((el) => {
+      container.appendChild(template(el))
+    })
+  }
 
-fetch(blogs)
-  .then((res) => res.json())
-  .then(createBlog)
-
-fetch(blogs)
-  .then((res) => res.json())
-  .then(createFooterBlog)
-
-function createBlog(data) {
-  console.log(data);
-  const latestLength = data.latest.length;
-  for (let i = 0; i < latestLength; i++) {
-    const prewImg = data.blogs[i].previewImg;
-    const title = data.blogs[i].title;
-    const description = data.blogs[i].description;
-    const comments = data.blogs[i].comments;
-    const watched = data.blogs[i].watched;
-    const published = data.blogs[i].published;
-    const date = new Date(published);
+  function dataParser(data) {
+    const monthsArr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const date = new Date(data);
     const day = date.getDate();
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    const month = months[date.getMonth()];
-    const ourBlog = document.getElementById('our-blog');
+    const month = monthsArr[date.getMonth()];
+    const year = date.getFullYear();
+    return {
+      day: day,
+      month: month,
+      year: year,
+    }
+  }
+
+  function latestBlogTemplate(dataObj) {
+    const { previewImg, title, description, comments, watched } = dataObj
+    const { day, month } = dataParser(dataObj.published)
     const blog = document.createElement('div');
     blog.classList.add('blog-bottom-box');
-    blog.innerHTML = `<div class="img-holder"><img src="${prewImg}" alt="seo">
-    <div class="date-box">
-    <h2>${day}</h2>
-    <p>${month}</p>
-    </div>
-    </div>
-  <div class="blog-box-bottom">
-    <div class="blog-box-title">${title}</div>
-    <div class="blog-box-text">${description}</div>
-    <div class="box-line"></div>
-    <div class="box-counters">
-      <div class="views">
-        <div class="view-img">
-          <img src="./img/blog-view.png" alt="seo">
-        </div>
-      <div class="view-count">${watched}</div>
-    </div>
-    <div class="comments">
-      <div class="comments-img">
-        <img src="./img/blog-comment.png" alt="seo">
+    blog.innerHTML = `
+          <div class="img-holder"><img src="${previewImg}" alt="seo">
+      <div class="date-box">
+        <h2>${day}</h2>
+        <p>${month}</p>
       </div>
-      <div class="comment-count">${comments}</div>
     </div>
-  </div>
-</div>`;
-  ourBlog.appendChild(blog);
+    <div class="blog-box-bottom">
+      <div class="blog-box-title">${title}</div>
+      <div class="blog-box-text">${description}</div>
+      <div class="box-line"></div>
+      <div class="box-counters">
+        <div class="views">
+          <div class="view-img">
+            <img src="./img/blog-view.png" alt="seo">
+          </div>
+          <div class="view-count">${watched}</div>
+        </div>
+        <div class="comments">
+          <div class="comments-img">
+            <img src="./img/blog-comment.png" alt="seo">
+          </div>
+          <div class="comment-count">${comments}</div>
+        </div>
+      </div>
+    </div>
+    `;
+    return blog;
   }
-}
-function createFooterBlog(data) {
-  const latestLength = data.latest.length;
-  const blogsLength = data.blogs.length;
-  for (let i = latestLength - 1; i < blogsLength; i++) {
-    const prewImg = data.blogs[i].previewImg;
-    const title = data.blogs[i].title;
-    const published = data.blogs[i].published;
-    const date = new Date(published);
-    const day = date.getDate();
-    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    const month = months[date.getMonth()];
-    const year = date.getFullYear();
-    const footerBlog = document.getElementById('footer-blog');
+
+  function otherBlogTemplate(dataObj) {
     const blog = document.createElement('div');
+    const { previewImg, title } = dataObj
+    const { day, month, year } = dataParser(dataObj.published)
     blog.classList.add('footer-center-bottom');
     blog.innerHTML = `<div class="footer-center-bottom-box">
       <div class="footer-center-box-left">
-        <img src="${prewImg}" alt="seo">
+        <img src="${previewImg}" alt="seo">
       </div>
       <div class="footer-center-box-right">
         <div class="footer-center-box-right-title">${title}</div>
         <div class="footer-center-box-right-text">${month} ${day}, ${year}</div>
       </div>
     </div>`;
-    footerBlog.appendChild(blog);
+    return blog;
   }
+
+  function renderItems(dataObjects) {
+    const blogs = dataObjects.blogs;
+    const latestIds = dataObjects.latest;
+    const latestBlogsArr = [];
+    const otherBlogsArr = [];
+    const latestContainer = document.getElementById('latest-container');
+    const otherContainer = document.getElementById('other-container');
+    blogs.forEach(e => {
+      if (latestIds.some(el => e.id === el)) {
+        latestBlogsArr.push(e);
+      } else {
+        otherBlogsArr.push(e);
+      }
+    });
+    fillBlogs(latestBlogsArr, latestContainer, latestBlogTemplate);
+    fillBlogs(otherBlogsArr, otherContainer, otherBlogTemplate);
+  }
+
+  fetch(blogs)
+    .then((res) => res.json())
+    .then(renderItems)
 }
+createBlogs();
